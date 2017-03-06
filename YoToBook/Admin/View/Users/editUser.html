@@ -1,0 +1,35 @@
+
+<body>
+<form method="post" action="{:U('Users/editUserSubmit')}?id={$userResult['buy_id']}">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 修改用户信息</strong></div>
+    <div class="padding border-bottom">
+
+    </div>
+    <table class="table table-hover text-center">
+
+      <tr>
+        <th width="120">用户ID</th>
+        <th>用户密码</th>       
+        <th>用户名</th>
+        <th>用户账号</th>
+        <th>用户邮箱</th>
+      </tr>   
+        
+          <tr>
+        
+          <td>{$userResult.buy_id}</td>
+          <td><input type="text" name='password' class="contact_input" value="{$userResult.password}"/></td>
+          <td><input type="text" name='username' class="contact_input" value="{$userResult.username}"/></td>
+          <td><input type="text" name='account' class="contact_input" value="{$userResult.account}"/></td>
+          <td><input type="text" name='email' class="contact_input" value="{$userResult.email}"/></td>
+           </tr>
+        
+       </table>
+  </div>
+        <div> 
+              <input type="submit" class='contact' value="确认修改" /> 
+        </div>
+              
+</form>
+</body></html>

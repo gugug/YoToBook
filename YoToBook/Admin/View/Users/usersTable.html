@@ -1,0 +1,114 @@
+
+<body>
+<form method="post" action="">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 用户管理</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-red"><a href="javascript:void(0)" onclick="return DelSelect()"><span class="icon-trash-o"></span> 批量删除</a></button>
+        </li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">用户ID</th>
+        <th>用户密码</th>  
+        <th>用户名</th>
+        <th>用户账号</th>
+        <th>用户邮箱</th>    
+      </tr>   
+      
+        <volist name='list' id='vo' key="k">
+           <tr>
+        
+          <td><input type="checkbox" name="id[]" value="{$vo.buy_id}" />{$vo.buy_id}</td>
+          <td>{$vo.password}</td>
+          <td>{$vo.username}</td>  
+          <td>{$vo.account}</td>
+          <td>{$vo.email}</td>
+           <td>
+               <div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del({$vo.buy_id})"><span class="icon-trash-o"></span> 删除</a>
+               <button type="button"  class="button border-green"> <a href="javascript:void(0)" onclick="return edit({$vo.buy_id})"><span class=""></span> 修改</a> </div>
+           </tr>
+        </volist>
+
+      <tr>
+        <td colspan="8"><div class="pagelist"> {$page} </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<script type="text/javascript">
+
+function del(id){
+//    alert(id);
+    if(confirm("您确定要删除吗?")){
+        //alert("Im OK!");
+        var idList=[];
+        idList.push(id);
+        var url="{:U('Users/deleteUser')}?id="+idList;
+        window.location.href=url;
+    }
+        
+}
+
+function edit(uid){
+     if(confirm("您确定要修改吗?")){
+        //alert("Im OK!");
+        
+        var url="{:U('Users/editUser')}?uid="+uid;
+        window.location.href=url;
+    }
+}
+
+
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) {
+                    return false;
+                } 
+                else{
+//                    alert("确定");
+                    var idList=[];
+                    var a = document.getElementsByName("id[]");
+                    for(var i = 0 ;i<a.length;i++)
+                    {
+                        if(a[i].checked)
+                        {
+                            idList.push(a[i].value);
+                        }
+                    }
+//                    alert(idList.length);
+                    var url="{:U('Users/deleteUser')}?id="+idList;
+                    window.location.href=url;
+                }
+                  
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+</script>
+</body></html>

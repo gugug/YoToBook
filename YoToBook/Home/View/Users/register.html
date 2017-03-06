@@ -1,0 +1,44 @@
+ <!--注册页面-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>注册</div>
+            <div class="feat_prod_box_details">
+
+                <div class="contact_form">
+                    <div class="form_subtitle">create new account</div>
+                    <form name="register" method='post' action="{:U('Users/doregister')}"> 
+                        <div class="form_row">
+                            <label class="contact"><strong>Account:</strong></label>
+                            <input type="text" name='account' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>Username:</strong></label>
+                            <input type="text" name='username' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>Password:</strong></label>
+                            <input type="text" name='password' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>Comfirm Password:</strong></label>
+                            <input type="text" name='password1' class="contact_input" />
+                        </div>  
+                        <div class="form_row">
+                            <label class="contact"><strong>Email:</strong></label>
+                            <input type="text" name='email' class="contact_input" />
+                        </div>
+
+                        <div class="form_row">
+                            <div class="right_button"><input type="submit" id='return' class="btn btn-info" value="注册" /></div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->
+

@@ -1,0 +1,66 @@
+[ 2016-11-09T16:57:16+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T16:57:22+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T16:57:23+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T16:57:45+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T20:00:14+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T20:00:32+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T20:00:36+08:00 ] 127.0.0.1 /YoToBook/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载模块:Index
+
+[ 2016-11-09T20:01:32+08:00 ] 127.0.0.1 /YoToBook/index.php/Books/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+ERR: 无法加载模块:Books
+
+[ 2016-11-09T20:02:50+08:00 ] 127.0.0.1 /YoToBook/index.php/Books/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+ERR: 无法加载模块:Books
+
+[ 2016-11-09T20:02:51+08:00 ] 127.0.0.1 /YoToBook/index.php/Books/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+ERR: 无法加载模块:Books
+
+[ 2016-11-09T20:03:15+08:00 ] 127.0.0.1 /YoToBook/index.php/Books/category
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Books
+

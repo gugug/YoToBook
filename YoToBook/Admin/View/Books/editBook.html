@@ -1,0 +1,44 @@
+
+<body>
+<form method="post" action="{:U('Books/editBookSubmit')}?id={$bookResult.b_id}">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 修改书籍信息</strong></div>
+    <div class="padding border-bottom">
+    </div>
+    <table class="table table-hover text-center">
+          <tr>
+            <th width="120">书籍ID</th>
+            <th>{$bookResult.b_id}</th>
+          </tr>
+          <tr>       
+            <th>书名</th>   
+            <td><input type="text" name='b_name' class="contact_input" value="{$bookResult.b_name}"/></td>  
+          </tr>
+          <tr>
+            <th>作者</th>
+            <td><input type="text" name='author' class="contact_input" value="{$bookResult.author}"/></td>  
+          </tr>
+          <tr>
+            <th width="25%">出版社</th>
+            <td><input type="text" name='press' class="contact_input" value="{$bookResult.press}"/></td>  
+          </tr>
+          <tr>
+             <th width="120">书籍类型</th>
+             <td><input type="text" name='type' class="contact_input" value="{$bookResult.type}"/></td>  
+          </tr>
+          <tr>
+             <th width="120" style="text-align:center;vertical-align:middle">书籍简介</th>
+             <td><textarea style="width:200px;height:100px;" name="introduction" value="intro">{$bookResult.introduction}</textarea></td>
+          </tr>
+        <tr>
+            <th width="120">书籍价格</th>
+            <td><input type="text" name='price' class="contact_input" value="{$bookResult.price}"/></td>
+        </tr>    
+       </table>
+  </div>
+        <div> 
+              <input type="submit" class='contact' value="确认修改" /> 
+        </div>
+              
+</form>
+</body></html>

@@ -1,0 +1,60 @@
+picture BODY {
+	TEXT-ALIGN: center; FONT-FAMILY: "����"; BACKGROUND: #ffffff; FONT-SIZE: 12px
+}
+
+picture UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+picture OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+picture LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+picture DIV {
+	TEXT-ALIGN: left; OVERFLOW: hidden
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px
+}
+picture .picshow {
+	BORDER-BOTTOM: #d9e0ea 1px solid; BORDER-LEFT: #d9e0ea 1px solid; MARGIN: 0px auto; WIDTH: 100%; HEIGHT: 368px; BORDER-TOP: #d9e0ea 1px solid; BORDER-RIGHT: #d9e0ea 1px solid
+}
+
+#picarea {
+	MARGIN: 0px; WIDTH: 100%; BACKGROUND: #fff; HEIGHT: 350px
+}
+#bigpicarea {
+	POSITION: relative; MARGIN: 0px auto; WIDTH: 100%; HEIGHT: 100%; OVERFLOW: hidden
+}
+.image {
+	TEXT-ALIGN: center
+}
+.image IMG {
+	BORDER-BOTTOM: #ececec 1px solid; BORDER-LEFT: #ececec 1px solid; MARGIN: 0px auto; BORDER-TOP: #ececec 1px solid; BORDER-RIGHT: #ececec 1px solid
+}
+#bigpicarea .word {
+	TEXT-ALIGN: center; HEIGHT: 0px; COLOR: #333
+}
+#bigpicarea .word H3 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 48px; HEIGHT: 0px; COLOR: #333; FONT-SIZE: 14px
+}
+#bigpicarea .ui-els-hide {
+	DISPLAY: none
+}
+
+.bigbtnPrev {
+	Z-INDEX: 100; POSITION: absolute; WIDTH: 35px; HEIGHT: 51px; TOP: 186px; CURSOR: pointer; LEFT: 30px
+}
+.bigbtnNext {
+	Z-INDEX: 100; POSITION: absolute; WIDTH: 35px; HEIGHT: 51px; TOP: 186px; CURSOR: pointer; RIGHT: 30px
+}
+#big_play_prev {
+	BACKGROUND-IMAGE: url(../images/leftbig.png); WIDTH: 35px; DISPLAY: block; HEIGHT: 51px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='../images/leftbig.png')
+}
+#big_play_next {
+	BACKGROUND-IMAGE: url(../images/rightbig.png); WIDTH: 35px; DISPLAY: block; HEIGHT: 51px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='../images/rightbig.png')
+}
+#smallpicarea {
+	MARGIN: 0px auto; WIDTH: 958px; BORDER-TOP: #ececec 1px solid; PADDING-TOP: 20px
+}

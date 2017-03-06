@@ -1,0 +1,27 @@
+<!--图书类别页面-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="crumb_nav"> <a href="{:U('Index/index')}">home</a> &gt;&gt; 书类别 </div>
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>各种类型的书</div>
+            <div class="new_products">
+                <ul class="list">
+                <volist name='typeResult' id='vo'>
+                    
+                    <li><div class="crumb_nav"> <a href="__APP__/Books/specialType/{$vo['type']}">{$vo['type']}</a><br />
+                            <!--<div class="new_prod_bg"> <span class="new_icon"><img src="__PUBLIC__/images/promo_icon.gif" alt="" title="" /></span> <a href="{:U('Books/details')}"><img src="__PUBLIC__/images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>-->
+                        </div></li>
+                </volist>
+
+                </ul>
+                <!--<div class="pagination"> <span class="disabled"><<</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a>…<a href="#?page=199">10</a><a href="#?page=200">11</a><a href="#?page=2">>></a> </div>-->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->
+
+
+
+
+

@@ -1,0 +1,41 @@
+<!--增加评论页面-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>发表评论</div>
+            <div class="feat_prod_box_details">
+                <p class="details"> 发表评论. </p>
+                <div class="contact_form">
+                    <div class="form_subtitle">all fields are requierd</div>
+                    <form name="addComment" method='post' action="__APP__/Books/doAddComment/{$cbid}"> 
+                        <div class="form_row">
+                            <label class="contact"><strong>匿名</strong>&nbsp;
+                                <INPUT TYPE="checkbox" NAME="anonymity" checked>
+                                </div>
+                                <div class="form_row">
+                                    <label class="contact"><strong>评论内容</strong></label>
+                                    <!--<textarea class="contact_textarea" name="comment_content" ></textarea>-->
+                                    <textarea id="editor_id" name="comment_content" style="width:97%;height:400px;">
+                                    </textarea>
+                                </div>
+                                <div class="delete_button">
+                                    <input type="submit" id='return' class="btn btn-info" value="确认发表"/>
+                                    <a href="__APP__/Books/comments/{$cbid}"><input type="button" id='return' class="btn btn-info" value="返回评论页"></a>
+                                </div>
+                                </form>
+
+
+
+                        </div>
+                </div></div>
+            <div class="clear"></div>
+        </div>
+        <!--end of left content-->
+
+        <script charset="utf-8" src="__PUBLIC__/kindeditor/kindeditor.js"></script>
+        <script charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
+        <script>
+            KindEditor.ready(function (K) {
+                window.editor = K.create('#editor_id');
+            });
+        </script>

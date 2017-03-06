@@ -1,0 +1,31 @@
+
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-key"></span> 修改头像</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="{:U('Administrator/uploadImg')}" enctype='multipart/form-data'>
+
+
+                    <div class="form-group">
+
+                        <h4>当前头像：</h4>
+                        <img src="__PUBLIC__/Admin/{$Think.session.adminInfo.headimage}" class='img-rounded' width='150' height="150">
+                        <img src="__PUBLIC__/Admin/{$Think.session.adminInfo.headimage}" class='img-rounded' width='100' height="100">
+
+                          <div class="formuitem">
+                              <input type="file" name="file" class="inputfile" value="选择图片">
+                          </div>
+                      </div>
+                        <div class="form-group">
+                          <div class="label">
+                            <label></label>
+                          </div>
+                          <div class="field">
+                            <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>   
+                          </div>
+                        </div>      
+        
+    </form>
+          </div>
+</div>
+</body></html>

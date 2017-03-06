@@ -1,0 +1,71 @@
+<!--购物车-->
+<script>
+    function addCount(username, b_id, b_num) {
+        b_num = parseInt(b_num) + 1;
+        var url = "__APP__/Books/changeCount/" + username + "/" + b_id + "/" + b_num;
+        window.location.href = url;
+    }
+    function subCount(username, b_id, b_num) {
+        b_num = parseInt(b_num) - 1;
+        var url = "__APP__/Books/changeCount/" + username + "/" + b_id + "/" + b_num;
+        window.location.href = url;
+    }
+</script>
+
+
+
+<div class="center_content">
+    <div class="left_content">
+        <div class="sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>我的购物车</div>
+            <div class="feat_prod_box_details">
+                <table class="cart_table" id="tab">
+                    <tr class="cart_title">
+                        <td>图片</td>
+                        <td>书名</td>
+                        <td>单价</td>
+                        <td>数量</td>
+                        <td>总价</td>
+                        <td>操作</td>
+                    </tr>
+
+
+                    <volist name="blist" id="vo">
+
+                        <tr class="ss">
+                            <td><a href="__APP__/Books/details/{$vo['b_id']}"><img src="__PUBLIC__/{$vo['b_pic_src']}" alt="" title="" border="0" class="cart_thumb" /></a></td>
+                            <td>{$vo['b_name']}</td>
+                            <td>
+                                <span class="price">{$vo['price']}</span>
+                            </td>
+                            <td class="count">
+                                <input class="min" name="" type="button" value="-" onclick="subCount('1', '{$vo[b_id]}', '{$order_result[$i-1].s_num}')" /> 
+                                {$order_result[$i-1].s_num}
+                                <input class="add" name="" type="button" value="+" onclick="addCount('1', '{$vo[b_id]}', '{$order_result[$i-1].s_num}')" />
+                            </td>
+                            <td>￥{$pricelist[$i-1]}</td>
+                            <td><a href="__APP__/Users/delete/{$vo['b_id']}" class="view_cart "><input type="button" id='return' class="btn btn-info" value="删除"></a></a></td>
+                        </tr>
+                    </volist>
+
+                    <tr>
+<!--                    <td colspan="5" class="cart_total"><span class="red">共<span id="count"></span>件商品&nbsp;&nbsp;&nbsp;&nbsp;| </td>
+                        <td><span class="red">总额：￥<span class="total"></span></td>-->
+                    <tr class="cart_table">
+                        <td colspan="5" class="cart_total"><span class="red">总价：￥{$totalMoney}</span></td>
+                        <td></td>
+                    </tr>
+
+
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <td><div class="left_button"><a href="{:U('Index/index')}"><input type="button" id='return' class="btn btn-info" value="&lt; 继续购物"></a></div></td><td colspan="3"> </td><td><div class="right_button"><a href="{:U('Books/order')}"><input type="button" id='return' class="btn btn-info" value="结算 &gt;"></a></div></td> 
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->

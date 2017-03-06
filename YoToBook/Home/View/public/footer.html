@@ -1,0 +1,45 @@
+        
+<div class="right_content">
+    <div class="cart">
+        <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/cart.gif" alt="" title="" /></span>购物车&nbsp;&nbsp;|</div>
+        <a href="{:U('Users/cart')}" class="view_cart">去我购物车</a> </div>
+    <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet3.gif" alt="" title="" /></span>关于本站</div>
+    <div class="about">
+        <div class="title_icon">
+            <p> <img src="__PUBLIC__/images/about.gif" alt="" title="" class="right"/>我们是独立自主开发的项目组，YoToBook的名字由来是因为youtube,我们以此为出发点进行了新名字，Yo （你） to （到） Book （书），表明的是你和书之间的距离希望广大读者可以多阅读，阅读读书是一种生活方式，而不单单是一种习惯。YoToBook版权归广东外语外贸大学思科信息学院古才良和陈戈共同所有。</p>
+        </div>
+    </div>
+    <div class="right_box">
+        <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet4.gif" alt="" title="" /></span>优惠产品</div>
+        <div class="new_prod_box"> <a href="#">书名</a>
+            <div class="new_prod_bg"> <span class="new_icon"><img src="__PUBLIC__/images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="__PUBLIC__/images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+        </div>
+        <div class="new_prod_box"> <a href="#">书名</a>
+            <div class="new_prod_bg"> <span class="new_icon"><img src="__PUBLIC__/images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="__PUBLIC__/images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+        </div>
+
+    </div>
+    <div class="right_box">
+        <!--{$typeResult}-->
+        <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet5.gif" alt="" title="" /></span>书的种类</div>
+        <ul class="list">
+            {:W('Type/category')};
+        </ul>
+    </div>
+</div>
+<!--end of right content-->
+<div class="clear"></div>
+</div>
+<!--end of center content-->
+<div class="footer">
+    <div class="left_footer"><img src="__PUBLIC__/images/footer_logo.gif" alt="" title="" /><br />
+    </div>
+    <div class="right_footer"> <a href="{:U('Index/index')}">首页</a> <a href="{:U('Index/aboutus')}">关于我们</a> <a href="{:U('Index/privacy_policy')}">隐私政策</a> <a href="{:U('Users/contact_us')}">联系我们</a> </div>
+</div>
+</div>
+
+<script src="__PUBLIC__/js1/jquery.js"></script>
+<script src="__PUBLIC__/js1/bootstrap.js"></script>
+
+</body>
+</html>

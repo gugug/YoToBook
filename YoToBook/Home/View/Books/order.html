@@ -1,0 +1,61 @@
+<!--订单页面-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>我的订单</div>
+            <div class="feat_prod_box_details">
+                <div class="contact_form">
+                    <div class="form_subtitle">我的订单</div>
+                    <form name="register" method='post' action="{:U('Users/doorder')}">
+                        <div class="form_row">
+                            <label class="contact"><strong>订单编号：</strong></label>
+                            314567788
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>用户名</strong></label>
+                            {$Think.session.username}
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>联系电话：</strong></label>
+                            <input type="text" name='tel' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>送货地址：</strong></label>
+                            <input type="text" name='address' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>购买清单：</strong></label><br><br>
+                            <table class="cart_table">
+                                <tr class="cart_title">
+                                    <td>图片</td>
+                                    <td>书名</td>
+                                    <td>单价</td>
+                                    <td>数量</td>
+                                    <td>总价</td>
+                                </tr>
+                                <volist name="blist" id="vo">
+                                    <tr class="ss">
+                                        <td><a href="__APP__/Books/details/{$vo['b_id']}"><img src="__PUBLIC__/{$vo['b_pic_src']}" alt="" title="" border="0" class="cart_thumb" /></a></td>
+                                        <td>{$vo['b_name']}</td>
+                                        <td>￥{$vo['price']}</td>
+                                        <td>{$order_result[$i-1].s_num}</td>
+                                        <td>￥{$pricelist[$i-1]}</td>
+                                    </tr>
+                                </volist>
+                                <tr class="cart_title">
+                                    <td colspan="4"></td>
+                                    <td>总价：{$totalMoney}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="form_row">
+                            <div class="left_button"><a href={:U('Users/cart')}><input type="button" id='return' class="btn btn-info" value="返回购物车" /></a></div>
+                            <div class="right_button"><input type="submit" id='return' class="btn btn-info" value="提交订单" /></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->

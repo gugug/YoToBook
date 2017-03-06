@@ -1,0 +1,39 @@
+ <!--登录页面-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>登录</div>
+            <div class="feat_prod_box_details">
+                <div class="contact_form">
+                    <div class="form_subtitle">login into your account</div>
+                    <form name="login" method='post' action="{:U('Users/dologin')}">
+                        <div class="form_row">
+                            <label class="contact"><strong>Username:</strong></label>
+                            <input type="text" name='username' class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>Password:</strong></label>
+                            <input type="text" name='password' class="contact_input" />
+                        </div>
+                        
+                        <div class="form_row">
+                            <input type="text" class="input input-big" name="code" placeholder="填写右面的验证码" data-validate="required:请填写右侧的验证码" />
+                            <img src="{:U('Users/verify',array())}" id='verify_img' onclick="this.src='{:U('Users/verify',array())}'"/>						
+                                                  
+                        </div>  
+                        
+                        
+                        
+                        <div class="form_row">
+                            <div class="right_button"><input type="submit" id='return' class="btn btn-info" value="登录" /></div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div></div>
+        <div class="clear"></div>
+    </div>
+    <!--end of left content-->
+

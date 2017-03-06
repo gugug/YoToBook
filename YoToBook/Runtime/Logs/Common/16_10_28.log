@@ -1,0 +1,18 @@
+[ 2016-10-28T22:10:55+08:00 ] 127.0.0.1 /YoToBook/index.php/index.php/Home/Users/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001877s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-10-28T22:48:02+08:00 ] 127.0.0.1 /YoToBook/index.php/index.php/Home/Users/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-10-28T22:48:06+08:00 ] 127.0.0.1 /YoToBook/index.php/index.php/Home/Users/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002092s ]
+ERR: 无法加载模块:Index.php
+

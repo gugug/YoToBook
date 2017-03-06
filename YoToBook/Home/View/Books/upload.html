@@ -1,0 +1,53 @@
+<!--上传新书-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>上传新书</div>
+            <div class="feat_prod_box_details">
+
+                <div class="contact_form">
+                    <div class="form_subtitle">update new book</div>
+                    <form name="register" method='post' action="{:U('Books/doupload')}" enctype='multipart/form-data'> 
+                        <div class="form_row">
+                            <label class="contact"><strong>书名</strong></label>
+                            <input type="text" name="b_name" class="contact_input" placeholder="  请输入书名" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>作者</strong></label>
+                            <input type="text" name="author" class="contact_input" placeholder="  请输入书的作者"/>
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>出版社</strong></label>
+                            <input type="text" class="contact_input" name="press" placeholder="   请输入书的出版社" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>类型</strong></label>
+                            <input type="text" class="contact_input" name="type" placeholder="    请输入书的类型"/>
+                        </div>  
+                        <div class="form_row">
+                            <label class="contact"><strong>简介</strong></label>
+                            <input type="text" name="introduction" class="contact_input" placeholder="    请输入书的简介"  />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>售价</strong></label>
+                            <input type="text" name="price" class="contact_input" placeholder="   请输入书的售价"  />
+                        </div>
+
+                        <br/><br/>
+                        <label class="contact"><strong>上传图片</strong></label>
+                        <input type="file" name="file" class="form_update"/>
+                        <!-- Button -->
+                        <div class="form_row">
+                            <div class="right_button"><input type="submit"id='return' class="btn btn-info" value="点我确认" /></div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+
+            </div></div>
+        <div class="clear"></div>
+    </div>
+

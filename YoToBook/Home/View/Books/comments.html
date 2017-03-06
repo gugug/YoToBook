@@ -1,0 +1,45 @@
+<!--图书评论页面-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="center_content">
+            <div class="left_content">
+                <div class="index_sub_left_content">
+                    <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title="" /></span>书评</div>
+                    <div class="feat_prod_box">
+                        <!--        <div class="prod_img"></div>-->
+                        <div class="title">这是书的评论 数量： {$commentRresult|count}</div>
+
+                        <volist name="commentRresult" id="vo">
+                            <div class="feat_prod_box">
+                                <div class="prod_det_box">
+                                    <div class="box_top"></div>
+                                    <div class="box_center">
+                                        <div class="prod_title">
+                                            用户名：<eq name="vo.anonymity" value="on">匿名<else/>{$vo['user_account']}</eq><br><br>
+                                            评论：{$vo['comment_content']}<br><br>
+                                            评论时间：{$vo['comment_time']|date="Y-m-d H:i",###}
+                                            <div class="delete_button"><eq name="vo.user_account" value="$Think.session.username"><a href="__APP__/Books/deletecomment/{$vo['comment_bid']}/{$vo['comment_id']}"><input type="button" id='return' class="btn btn-info" value="删除"></a><else/></eq></div>
+                                        </div>
+                                        </br>
+                                        <div class="box_bottom"></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+                        </volist>
+                    </div>
+                    <div class="delete_button">
+                        <a href="__APP__/Books/addComment/{$bookid}"><button id='return' class="btn btn-info">我也来发表评论</button></a>
+                        <a href="__APP__/Books/details/{$bookid}"><button id='return' class="btn btn-info">返回详情</button></a>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

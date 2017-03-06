@@ -1,0 +1,31 @@
+<!--图书类别-->
+<div class="center_content">
+    <div class="left_content">
+        <div class="index_sub_left_content">
+            <div class="crumb_nav"> <a href="{:U('Books/category')}">书类别</a> &gt;&gt;  </div>
+            <div class="title"><span class="title_icon"><img src="__PUBLIC__/images/bullet1.gif" alt="" title=""/></span>{$specialTypeResult[0]['type']}&gt;&gt;数量：{$specialTypeResult|count}</div>
+            <div class="new_products">
+
+                <volist name='specialTypeResult' id='vo'>
+
+                    <div class="new_prod_box"> <a href="__APP__/Books/details/{$vo['b_id']}">{$vo["b_name"]}</a>
+                        <div class="new_prod_bg"> <a href="__APP__/Books/details/{$vo['b_id']}"><img src="__PUBLIC__/{$vo['b_pic_src']}" alt="" title="" class="thumb" border="0" width="50%"/></a> </div>
+                    </div>  
+
+                </volist>
+
+
+
+                <!--<div class="pagination"> <span class="disabled"><<</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a>…<a href="#?page=199">10</a><a href="#?page=200">11</a><a href="#?page=2">>></a> </div>-->
+            </div></div>
+        <div class="clear"></div>
+
+
+    </div>
+    <!--end of left content-->
+
+
+
+
+
+
